@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_song_list_item"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="@drawable/songlist_selector">
+    <TextView
+        android:id="@+id/tv_song_title"
+        style="@style/song_title" />
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_song_original_artist"
+            style="@style/song_artist" />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_song_artist"
+            style="@style/song_artist" />
+    </LinearLayout>
+
+
+</LinearLayout>
